@@ -1,0 +1,7 @@
+{
+  "name": "Nova - Next Gen Banking",
+  "description": "AI-driven, hyper-personalized banking experience for the digital generation.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
