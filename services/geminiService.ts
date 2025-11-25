@@ -2,7 +2,7 @@ import { GoogleGenAI, Type, Schema, Chat } from "@google/genai";
 import { Persona, AISettings } from "../types";
 
 // Initialize the client with the API key from environment variables
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 export const generateFinancialPersona = async (interests: string[], name: string): Promise<Persona> => {
   const modelId = "gemini-2.5-flash";
